@@ -1,0 +1,26 @@
+# /etc/conf.d/reeved: config file for /etc/init.d/reeved
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/reeve/reeve.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/reeved"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/reeved.pid"
+
+# Where to write reeved data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/reeved"
+
+# User and group to own reeved process
+#BITCOIND_USER="reeve"
+#BITCOIND_GROUP="reeve"
+
+# Path to reeved executable
+#BITCOIND_BIN="/usr/bin/reeved"
+
+# Nice value to run reeved under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

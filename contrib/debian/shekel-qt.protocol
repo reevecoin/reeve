@@ -1,0 +1,11 @@
+[Protocol]
+exec=reeve-qt '%u'
+protocol=reeve
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

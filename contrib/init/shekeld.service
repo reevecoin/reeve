@@ -1,0 +1,26 @@
+[Unit]
+Description=Reeve's distributed currency daemon
+After=network.target
+
+[Service]
+User=reeve
+Group=reeve
+
+Type=forking
+PIDFile=/var/lib/reeved/reeved.pid
+
+ExecStart=/usr/bin/reeved -daemon -pid=/var/lib/reeved/reeved.pid \
+          -conf=/etc/reeve/reeve.conf -datadir=/var/lib/reeved
+
+ExecStop=-/usr/bin/reeve-cli -conf=/etc/reeve/reeve.conf \
+         -datadir=/var/lib/reeved stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

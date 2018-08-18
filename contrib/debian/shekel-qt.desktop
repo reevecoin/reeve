@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Reeve
+Comment=Reeve P2P Cryptocurrency
+Comment[fr]=Reeve, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Reeve, eşten eşe kriptografik sanal para birimi
+Exec=reeve-qt %u
+Terminal=false
+Type=Application
+Icon=reeve128
+MimeType=x-scheme-handler/reeve;
+Categories=Office;Finance;
